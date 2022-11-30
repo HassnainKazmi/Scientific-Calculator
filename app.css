@@ -1,0 +1,113 @@
+body {
+    background-color: #ffffff;
+    color: #202124;
+    box-sizing: border-box;
+}
+
+#mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+#subContainer {
+    margin: 0 auto;
+    border-radius: 10px;
+    max-width: 690px;
+}
+
+h1 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+input {
+    border: 1px solid #dadce0;
+    border-radius: 10px;
+    width: 100%;
+    font-weight: 700;
+    padding: 20px;
+    transition: border 0.25s;
+    width: 680px;
+    margin-bottom: 0.5rem;
+}
+
+input:focus {
+    border: 1px solid #141414;
+    border-radius: 10px;
+    outline: none;
+}
+
+.calculations {
+    display: block;
+    width: 680px;
+    word-wrap: break-word;
+    color: #8a8a8a;
+    float: left;
+    margin: 2px 4px;
+    padding: 0px 17px;
+}
+
+.dataCell {
+    background: #f1f3f4;
+    border: 1px solid #f1f3f4;
+    border-radius: 4px;
+    text-align: center;
+    padding: 8px 35px;
+    margin: 5px 3px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+.dataCell:hover {
+    background: #ebedee;
+}
+
+.dataCell:active {
+    border: 1px solid #141414;
+}
+
+.endCell {
+    background: #d0d2d6;
+    border: 1px solid #d0d2d6;
+    font-weight: 400;
+    transition: all 0.25s;
+}
+
+.endCell:hover {
+    background: #c4c6cc;
+}
+
+.endCell:active {
+    border: 1px solid #141414;
+}
+
+.equalCell {
+    background: #4285f4;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 4px;
+    border: 1px solid #4285f4;
+    transition: all 0.25s;
+}
+
+.equalCell:hover {
+    background: #458cff;
+}
+
+.equalCell:active {
+    border: 1px solid #458cff;
+}
+
+.disabledDiv {
+    opacity: 0.3;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+.togglePadding {
+    padding: 8px 29px !important;
+}
