@@ -57,6 +57,8 @@ table.addEventListener("click", (e) => {
     newResult = input.value;
     span.innerText = result;
 
+    console.log(e.target.innerText);
+
     if (e.target.innerText === "sin" || e.target.innerText === "cos" || e.target.innerText === "tan" || e.target.innerText === "log") {
         result = result + "(";
         getResults();
@@ -83,7 +85,7 @@ table.addEventListener("click", (e) => {
     }
     else if (e.target.innerText === "√") {
         result = result.slice(0, result.length - 1);
-        result = result + "sqrt(";
+        result = result + "^(1/2)";
         getResults();
     }
     else if (e.target.innerText === "x!") {
@@ -93,7 +95,27 @@ table.addEventListener("click", (e) => {
     }
     else if (e.target.innerText === "xy") {
         result = result.slice(0, result.length - 2);
-        result = result + "pow(";
+        result = result + "^";
+        getResults();
+    }
+    else if (e.target.innerText === "ex") {
+        result = result.slice(0, result.length - 1);
+        result = result + "^";
+        getResults();
+    }
+    else if (e.target.innerText === "10x") {
+        result = result.slice(0, result.length - 1);
+        result = result + "^";
+        getResults();
+    }
+    else if (e.target.innerText === "x2") {
+        result = result.slice(0, result.length - 2);
+        result = result + "^2";
+        getResults();
+    }
+    else if (e.target.innerText === "y√x") {
+        result = result.slice(0, result.length - 3);
+        result = result + "^(1/";
         getResults();
     }
     else if (e.target.innerText === "=") {
