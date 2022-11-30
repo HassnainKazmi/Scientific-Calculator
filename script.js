@@ -100,7 +100,7 @@ table.addEventListener("click", (e) => {
     }
     else if (e.target.innerText === "ex") {
         result = result.slice(0, result.length - 1);
-        result = result + "^";
+        result = result;
         getResults();
     }
     else if (e.target.innerText === "10x") {
