@@ -1,4 +1,4 @@
 # Scientific-Calculator
-Created a fully functional scientific calculator which takes any mathematical expression as input and outputs its result. The input can be provided either through a keyboard or by clicking the on-screen buttons. 
+Created a fully functional scientific calculator that can evaluate any mathematical expression and provide the result as output. The calculator offers the flexibility of input through a keyboard or by selecting the on-screen buttons.
 
-Technologies Used: HTML5, CSS, Bootstrap 5, JavaScript
+Technologies Used: JavaScript, Bootstrap5, CSS3, & HTML5
