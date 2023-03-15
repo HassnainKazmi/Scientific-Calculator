@@ -14,11 +14,12 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  text-align: center;
   border-radius: 10px;
+  padding: 0rem 1rem;
 }
 
 h1 {
-  text-align: center;
   margin-bottom: 10px;
 }
 
@@ -40,12 +41,9 @@ input:focus {
 
 .calculations {
   display: block;
-  /* width: 680px; */
+  text-align: center;
   word-wrap: break-word;
   color: #8a8a8a;
-  float: left;
-  margin: 2px 4px;
-  padding: 0px 17px;
 }
 
 .dataCell {
@@ -135,12 +133,12 @@ button {
 }
 
 @media screen and (min-width: 801px) {
-  .scientificNums {
+  /* .scientificNums {
     display: block !important;
   }
   .normalNums {
-    display: block !important ;
-  }
+    display: block !important;
+  } */
   input {
     width: 43rem !important;
   }
@@ -148,12 +146,24 @@ button {
 
 @media screen and (max-width: 800px) {
   .mobileModeDivs {
-    display: block;
+    display: block !important;
   }
   .scientificNums {
     display: none;
   }
   input {
     width: 23rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .dataCell {
+    padding: 0.5rem 1.75rem;
+  }
+  .equalCell {
+    padding: 0.25rem 1.75rem;
+  }
+  input {
+    width: 19.75rem;
   }
 }

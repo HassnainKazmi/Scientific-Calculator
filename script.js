@@ -192,7 +192,7 @@ table.addEventListener("click", (e) => {
     input.value = "";
     result = "";
     span.innerHTML = "";
-    togglePadding.classList.add("togglePadding");
+    inverseButton.classList.add("togglePadding");
   } else {
   }
 
@@ -222,8 +222,35 @@ inverseButton.addEventListener("click", (e) => {
   }
 });
 
+const displayBlocks = () => {
+  inverseButton.style.background = "#d0d2d6";
+  inverseButton.style.border = "1px solid #d0d2d6";
+
+  for (let i = 0; i < scientific.length; i++) {
+    scientific[i].style.display = "block";
+  }
+
+  for (let i = 0; i < scientificInverse.length; i++) {
+    scientificInverse[i].style.display = "none";
+  }
+};
+
+const displayHiddenBlocks = () => {
+  inverseButton.style.background = "#dadce0";
+  inverseButton.style.border = "1px solid #dadce0";
+
+  for (let i = 0; i < scientific.length; i++) {
+    scientific[i].style.display = "none ";
+  }
+
+  for (let i = 0; i < scientificInverse.length; i++) {
+    scientificInverse[i].style.display = "block";
+  }
+};
+
 normalValues.addEventListener("click", (e) => {
   input.style.width = "23rem";
+
   for (let i = 0; i < scientificNums.length; i++) {
     scientificNums[i].style.display = "none";
   }
@@ -235,6 +262,7 @@ normalValues.addEventListener("click", (e) => {
 
 scientificValues.addEventListener("click", (e) => {
   input.style.width = "20rem";
+
   for (let i = 0; i < scientificNums.length; i++) {
     scientificNums[i].style.display = "block";
   }
@@ -243,28 +271,3 @@ scientificValues.addEventListener("click", (e) => {
     normalNums[i].style.display = "none";
   }
 });
-
-const displayBlocks = () => {
-  inverseButton.style.background = "#d0d2d6";
-  inverseButton.style.border = "1px solid #d0d2d6";
-
-  for (let i = 0; i < scientific.length; i++) {
-    scientific[i].style.display = "block";
-  }
-  for (let i = 0; i < scientificInverse.length; i++) {
-    scientificInverse[i].style.display = "none";
-  }
-};
-
-const displayHiddenBlocks = () => {
-  inverseButton.style.background = "#dadce0";
-  inverseButton.style.border = "1px solid #dadce0";
-
-  for (let i = 0; i < scientific.length; i++) {
-    scientific[i].style.display = "none";
-  }
-
-  for (let i = 0; i < scientificInverse.length; i++) {
-    scientificInverse[i].style.display = "block";
-  }
-};
