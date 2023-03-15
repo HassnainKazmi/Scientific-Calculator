@@ -142,7 +142,7 @@ button {
     display: block !important ;
   }
   input {
-    width: 43rem;
+    width: 43rem !important;
   }
 }
 
