@@ -9,6 +9,7 @@ const scientificValues = document.querySelector(".scientificValues");
 const normalValues = document.querySelector(".normalValues");
 const scientificNums = document.querySelectorAll(".scientificNums");
 const normalNums = document.querySelectorAll(".normalNums");
+
 const keys = [
   " ",
   "^",
