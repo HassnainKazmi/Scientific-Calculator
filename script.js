@@ -249,8 +249,6 @@ const displayHiddenBlocks = () => {
 };
 
 normalValues.addEventListener("click", (e) => {
-  input.style.width = "23rem";
-
   for (let i = 0; i < scientificNums.length; i++) {
     scientificNums[i].style.display = "none";
   }
